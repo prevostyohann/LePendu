@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Pendu</title>
+    <style>
+        /* Ajoutez ici vos styles CSS */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #mot-trouver {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #lettres-tentees {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jeu de Pendu</h1>
+    <div id="mot-trouver"></div>
+    <input type="text" id="lettre-input" maxlength="1" placeholder="Entrez une lettre" autofocus>
+    <button onclick="proposerLettre()">Proposer</button>
+    <div id="message"></div>
+    <div id="lettres-tentees"></div>
+    <div id="parties_gagnees"></div>
+    <div id="parties_jouees"></div>
+    <button onclick="rejouer()">Rejouer</button>
+
+    <script src="motmot.js"></script>
+    <script src="test.js"></script>
+</body>
+</html>

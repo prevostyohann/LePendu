@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="$light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Le Pendu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bulma/css/bulma.min.css">
+    </head>
+    <body>
+        <h1 class="has-text-centered py-4 is-size-2 box">Jeu de Pendu</h1>
+        <section class="box has-text-centered py-4 is-size-4">
+            <h3>Mot à Trouver :</h3>
+        <article class="" id="mot-trouver"></article>
+    </section>
+    <section class="box has-text-centered">
+        <input type="text" id="lettre-input" maxlength="1" placeholder="Entrez une lettre" autofocus class="is-size-5"><br><br>
+        <button onclick="proposerLettre()" class="box mx-6 is-size-6  ">Proposer</button>
+        <img id="image-erreur" src="pendu7.png" alt="Potence" class="has-item-centered">
+    </section>
+        <div id="message"></div>
+        <div id="lettres-tentees"></div>
+        <div id="parties_gagnees"></div>
+        <div id="parties_jouees"></div>
+        <button onclick="rejouer()">Rejouer</button>
+
+        
+        
+
+        <script src="motmot.js" async defer></script>
+        <script src="script.js" async defer></script>
+        
+    </body>
+</html>
